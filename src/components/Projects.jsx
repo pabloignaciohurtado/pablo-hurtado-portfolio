@@ -5,14 +5,15 @@ import Reveal from './Reveal'
 const PROJECTS = [
   {
     name: 'Chatbot IA — Jumbo',
+    company: 'Cencosud',
     icon: Bot,
     description:
-      'Primer chatbot con inteligencia artificial de la compañía, desarrollado end-to-end e integrado en WhatsApp y redes sociales.',
+      'Primer chatbot con inteligencia artificial de Jumbo, desarrollado end-to-end e integrado en WhatsApp y redes sociales.',
     tech: ['IA Conversacional', 'NLP', 'WhatsApp Business', 'Detección de Fraude'],
     results: ['95% disponibilidad', 'NPS 92+'],
     details: [
       'Desarrollo completo del flujo conversacional: diálogos, reglas de negocio, documentación y alimentación de la base de conocimiento.',
-      '95% de disponibilidad del canal, 85%+ de resolución en primera interacción y NPS de 92+ puntos — ganador de varios premios de la industria.',
+      '95% de disponibilidad del canal, 85%+ de resolución en primera interacción y NPS de 92+ puntos.',
       'Segmentación de clientes, ofertas diferenciadas y compensaciones personalizadas operadas por el bot.',
       'Modelo de detección de fraude y un modelo de contención que alcanzó 50%, pionero en el mercado chileno en ese momento.',
     ],
@@ -20,6 +21,7 @@ const PROJECTS = [
   },
   {
     name: 'Speech Analytics — WOM',
+    company: 'WOM Chile',
     icon: AudioLines,
     description:
       'IA generativa (Gemini) sobre una base de +400K llamadas del call center: resúmenes automáticos, detección de intención y segmentación de clientes.',
@@ -36,36 +38,39 @@ const PROJECTS = [
   },
   {
     name: 'Fundación del Área de Servicio al Cliente — Oxford',
+    company: 'Oxford',
     icon: Building2,
     description:
-      'Creación desde cero del área de Servicio al Cliente: filosofía, KPIs y el sistema omnicanal SendDesk, pionero en el retail familiar chileno.',
-    tech: ['SendDesk', 'Omnicanalidad', 'Customer Service Ops', 'Decálogos de Servicio'],
-    results: ['Pionero en omnicanalidad', 'Diferenciación competitiva'],
+      'Creación desde cero del área de Servicio al Cliente: filosofía, KPIs y operación omnicanal sobre Zendesk para las marcas Oxford, Muvo, Cannondale y Kona.',
+    tech: ['Zendesk', 'Omnicanalidad', 'Customer Service Ops', 'Decálogos de Servicio'],
+    results: ['Fundador del área', 'Diferenciación competitiva'],
     details: [
-      'Definí criterios, KPIs y decálogos de servicio, estableciendo el marco de calidad medible de la compañía.',
-      'Implementé SendDesk como sistema omnicanal de reclamos —único en el retail familiar chileno en ese momento— integrando la experiencia física (tiendas) y digital (web).',
-      'Construí reportería ejecutiva, control de auditoría de buenas y malas prácticas de venta, e indicadores de gestión por reclamo, tienda y ejecutivo.',
-      'Diseñé encuestas de satisfacción para dos segmentos —clientes de talleres de bicicletas y clientes de compra— con métricas medibles desde el inicio.',
-      'Sentó las bases culturales de calidad y servicio que la compañía adoptó como estándar, logrando diferenciación competitiva real.',
+      'Definí criterios, KPIs y decálogos de servicio, estableciendo el marco de calidad medible del área a nivel nacional.',
+      'Implementé y optimicé Zendesk como plataforma de help desk y back office, integrando la experiencia física (13 tiendas y talleres) y digital (ecommerce).',
+      'Construí reportería ejecutiva, control de auditoría de prácticas de venta e indicadores de gestión por reclamo, tienda y ejecutivo.',
+      'Diseñé estudios de satisfacción (NPS, CSAT, CES, focus y estudios de campo), incluyendo segmentos como clientes de talleres de bicicletas.',
+      'Lideré proyectos de lealtad y fidelización, sentando las bases culturales de calidad y servicio del área.',
     ],
   },
   {
-    name: 'CRM Microsoft Dynamics 365 — Jumbo',
+    name: 'CRM Microsoft Dynamics 365',
+    company: 'Cencosud',
     icon: Database,
     description:
-      'Transformación de procesos internos: datos centralizados, trazabilidad y gobierno de la información, implementado directamente con Microsoft.',
-    tech: ['Microsoft Dynamics 365', 'Gestión del Cambio', 'Gobierno de Datos'],
+      'Transformación de procesos internos: datos centralizados, trazabilidad y gobierno de la información, con Microsoft Dynamics 365 y ChatGPT-4 Copilot.',
+    tech: ['Microsoft Dynamics 365', 'ChatGPT-4 Copilot', 'Gestión del Cambio', 'Gobierno de Datos'],
     results: ['+20% registros útiles', '-30% tipologías'],
     details: [
       'Simplificación del árbol de tipificaciones y motivos: de 300 a 200 categorías (-30%).',
       'Migración desde planillas Excel a un CRM integrado, con roles y responsabilidades definidos para crear tipificaciones.',
-      'Gobierno claro con especificaciones internas coordinadas, lo que eliminó registros inconsistentes.',
+      'Integración de ChatGPT-4 Copilot para la automatización de canales de atención, mejorando la eficiencia operativa.',
       'Incremento de 20% en registros útiles y mejor control, monitoreo y confianza en los procesos internos.',
-      'Gestión de cambio organizacional compleja pero exitosa; quedó como baseline para escalar a múltiples BPOs.',
+      'Gestión de cambio organizacional compleja pero exitosa, asegurando procesos trazables y auditables.',
     ],
   },
   {
     name: 'Gestión de Calidad & Mejora Continua — WOM',
+    company: 'WOM Chile',
     icon: ShieldCheck,
     description:
       'Modelos de gestión de calidad con control en todos los puntos de contacto del customer journey.',
@@ -124,6 +129,11 @@ export default function Projects() {
                     </div>
 
                     <div className="flex-1 min-w-0">
+                      {project.company && (
+                        <span className="text-xs font-semibold uppercase tracking-wider text-teal">
+                          {project.company}
+                        </span>
+                      )}
                       <h3 className="font-bold text-ink text-lg">{project.name}</h3>
                       <p className="text-ink-light mt-0.5">{project.description}</p>
                       <div className="mt-3 flex flex-wrap gap-1.5">

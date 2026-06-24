@@ -79,10 +79,10 @@ export default function AIProjects() {
                 </div>
                 <div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-teal-light">
-                    Oxford · Jumbo
+                    Cencosud · Jumbo
                   </span>
                   <h3 className="text-2xl font-bold text-white mt-1">
-                    Chatbot con IA — primer canal conversacional de la compañía
+                    Chatbot con IA — primer canal conversacional de Jumbo
                   </h3>
                 </div>
               </div>

@@ -1,23 +1,35 @@
-import { BarChart3, Award, GraduationCap } from 'lucide-react'
+import { BarChart3, Award, GraduationCap, BookOpen, Briefcase } from 'lucide-react'
 import Reveal from './Reveal'
 
 const EDUCATION = [
   {
+    year: '2005 — 2007',
+    title: 'Piloto Comercial',
+    org: 'Universidad Técnica Federico Santa María',
+    icon: Briefcase,
+  },
+  {
+    year: '',
+    title: 'Administración y Gestión de Empresas',
+    org: 'Universidad Diego Portales',
+    icon: BookOpen,
+  },
+  {
     year: '2015',
     title: 'Diplomado en Customer Intelligence and Data Mining',
-    place: 'Especialización en analítica e inteligencia de cliente',
+    org: 'Universidad de Chile',
     icon: BarChart3,
   },
   {
-    year: '2019',
-    title: 'Scrum Master & Product Owner',
-    place: 'Certificación en metodologías ágiles para liderazgo de equipos',
+    year: '2020',
+    title: 'Scrum Master & Product Owner · Experto en Agilidad Empresarial',
+    org: 'Universidad Diego Portales',
     icon: Award,
   },
   {
-    year: '2022',
-    title: 'MBA en E-commerce y Marketing Digital',
-    place: 'Barcelona, España',
+    year: '2020 — 2021',
+    title: 'Máster en Dirección de E-commerce y Marketing Digital',
+    org: 'Universitat de Barcelona',
     icon: GraduationCap,
   },
 ]
@@ -80,9 +92,9 @@ export default function Education() {
 function EduCard({ item }) {
   return (
     <div className="inline-block rounded-2xl border border-gray-100 bg-gray-50 px-6 py-4 transition-all hover:border-teal/30 hover:shadow-md">
-      <span className="text-sm font-bold text-teal">{item.year}</span>
+      {item.year && <span className="text-sm font-bold text-teal">{item.year}</span>}
       <h3 className="mt-1 font-bold text-ink text-lg">{item.title}</h3>
-      <p className="text-ink-light">{item.place}</p>
+      <p className="text-ink-light">{item.org}</p>
     </div>
   )
 }

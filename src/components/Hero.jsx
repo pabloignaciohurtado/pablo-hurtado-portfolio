@@ -33,7 +33,7 @@ export default function Hero() {
         <div className="animate-fade-in-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-teal-light/30 bg-teal-light/10 px-4 py-1.5 text-sm font-medium text-teal-light">
             <Sparkles size={14} />
-            Jefe de Calidad &amp; AI en WOM Chile
+            Head of Quality &amp; AI · WOM Chile
           </span>
 
           <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight max-w-4xl">

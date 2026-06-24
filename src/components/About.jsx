@@ -21,25 +21,25 @@ export default function About() {
             </h2>
             <div className="mt-6 space-y-5 text-lg text-ink-light leading-relaxed">
               <p>
-                Soy <strong className="text-ink">Pablo Hurtado</strong>, profesional con más
-                de una década liderando la intersección entre{' '}
-                <strong className="text-ink">Inteligencia Artificial</strong>,{' '}
-                <strong className="text-ink">Customer Experience</strong> y{' '}
-                <strong className="text-ink">transformación de procesos</strong>. He construido
-                mi carrera en industrias tan distintas como telecomunicaciones, retail,
-                servicios y belleza, siempre con un mismo foco: entender al cliente para
-                rediseñar la operación a su alrededor.
+                Soy <strong className="text-ink">Pablo Hurtado</strong>, con más de 10 años de
+                experiencia en liderazgo de equipos y estrategias de experiencia del cliente.
+                Actualmente lidero equipos como{' '}
+                <strong className="text-ink">Jefe de Calidad y Mejora Continua en WOM Chile</strong>,
+                combinando inteligencia artificial, automatización y el rediseño de procesos para
+                optimizar el servicio al cliente y garantizar una experiencia superior en cada
+                punto de contacto.
               </p>
               <p>
-                Hoy, como Jefe de Calidad &amp; AI en WOM Chile, lidero la integración de
-                modelos de inteligencia artificial en la gestión de calidad y experiencia,
-                combinando metodologías Lean con analítica avanzada para escalar decisiones
-                que antes dependían solo de la intuición.
+                He implementado soluciones innovadoras como la integración de herramientas de{' '}
+                <strong className="text-ink">IA y automatización</strong>, mejorando indicadores
+                críticos como el <strong className="text-ink">NPS y CSAT</strong>. Mi misión es
+                transformar la experiencia del cliente mediante estrategias disruptivas,
+                impulsando el crecimiento sostenible y la eficiencia operativa en la era digital.
               </p>
               <p>
-                Creo en equipos pequeños con criterio, en datos que se convierten en
-                acción, y en que la mejor tecnología es la que vuelve invisible la
-                fricción del cliente.
+                He construido mi carrera en industrias tan distintas como telecomunicaciones,
+                retail, consumo masivo y belleza, siempre con un mismo foco: entender al cliente
+                para rediseñar la operación a su alrededor.
               </p>
             </div>
           </Reveal>
