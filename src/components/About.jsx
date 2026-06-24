@@ -52,7 +52,7 @@ export default function About() {
                   key={stat.label}
                   className="rounded-2xl border border-gray-100 bg-gray-50 p-6 transition-all hover:border-teal/30 hover:shadow-lg hover:shadow-teal/5 hover:-translate-y-1"
                 >
-                  <div className="text-3xl sm:text-4xl font-extrabold text-teal">
+                  <div className="text-3xl sm:text-4xl font-extrabold text-teal font-mono">
                     {stat.value}
                   </div>
                   <div className="mt-2 text-sm font-medium text-ink-light">

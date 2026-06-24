@@ -3,6 +3,7 @@ import { Menu, X } from 'lucide-react'
 
 const LINKS = [
   { href: '#sobre-mi', label: 'Sobre mí' },
+  { href: '#impacto', label: 'Impacto' },
   { href: '#experiencia', label: 'Experiencia' },
   { href: '#proyectos', label: 'Proyectos' },
   { href: '#expertise', label: 'Expertise' },

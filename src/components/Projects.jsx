@@ -150,7 +150,7 @@ export default function Projects() {
                         {project.results.map((r) => (
                           <span
                             key={r}
-                            className="rounded-full bg-teal/5 border border-teal/20 text-teal text-xs font-semibold px-2 py-0.5"
+                            className="rounded-full bg-teal/5 border border-teal/20 text-teal text-xs font-semibold px-2 py-0.5 font-mono"
                           >
                             {r}
                           </span>

@@ -1,4 +1,5 @@
 import { ArrowDown, Sparkles } from 'lucide-react'
+import NeuralBackground from './NeuralBackground'
 
 const HERO_STATS = [
   { value: 'NPS 92+', label: 'Chatbot IA Jumbo', href: '#ia-chatbot-jumbo' },
@@ -17,8 +18,8 @@ export default function Hero() {
     >
       {/* decorative background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-teal/20 blur-3xl animate-float" />
-        <div className="absolute bottom-0 -left-24 w-96 h-96 rounded-full bg-teal-light/10 blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute -top-32 -right-32 w-[28rem] h-[28rem] rounded-full bg-teal/20 blur-3xl animate-aurora" />
+        <div className="absolute bottom-0 -left-24 w-96 h-96 rounded-full bg-teal-light/10 blur-3xl animate-aurora" style={{ animationDelay: '3s' }} />
         <div
           className="absolute inset-0 opacity-[0.04]"
           style={{
@@ -28,6 +29,7 @@ export default function Hero() {
           }}
         />
       </div>
+      <NeuralBackground className="absolute inset-0 h-full w-full opacity-70" />
 
       <div className="relative mx-auto max-w-6xl px-6 lg:px-8 pt-28 pb-20 w-full">
         <div className="animate-fade-in-up">
@@ -36,9 +38,9 @@ export default function Hero() {
             Head of Quality &amp; AI · WOM Chile
           </span>
 
-          <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.08] tracking-tight max-w-4xl">
+          <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight max-w-4xl">
             Transformo operaciones desde la{' '}
-            <span className="text-teal-light">inteligencia del cliente</span>
+            <span className="text-gradient">inteligencia del cliente</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed">
@@ -70,7 +72,7 @@ export default function Hero() {
                 onClick={() => scrollTo(stat.href)}
                 className="text-left rounded-xl border border-white/10 bg-white/5 p-4 transition-all hover:border-teal-light/40 hover:bg-white/10 hover:-translate-y-0.5"
               >
-                <div className="text-xl sm:text-2xl font-extrabold text-teal-light">
+                <div className="text-xl sm:text-2xl font-extrabold text-teal-light font-mono">
                   {stat.value}
                 </div>
                 <div className="mt-1 text-xs text-gray-400 font-medium leading-snug">

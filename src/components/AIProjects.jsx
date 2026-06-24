@@ -72,7 +72,7 @@ export default function AIProjects() {
         <div className="mt-16 space-y-10">
           {/* Chatbot Jumbo */}
           <Reveal id="ia-chatbot-jumbo" className="scroll-mt-24">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
+            <div className="card-glow rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
               <div className="flex items-start gap-4">
                 <div className="shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal text-white">
                   <Bot size={26} />
@@ -99,7 +99,7 @@ export default function AIProjects() {
                     key={s.label}
                     className="rounded-xl border border-white/10 bg-white/5 p-4 text-center"
                   >
-                    <div className="text-2xl sm:text-3xl font-extrabold text-teal-light">
+                    <div className="text-2xl sm:text-3xl font-extrabold text-teal-light font-mono">
                       {s.value}
                     </div>
                     <div className="mt-1 text-xs text-gray-400 font-medium">{s.label}</div>
@@ -156,7 +156,7 @@ export default function AIProjects() {
 
           {/* Speech Analytics */}
           <Reveal id="ia-speech-analytics" className="scroll-mt-24">
-            <div className="rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
+            <div className="card-glow rounded-3xl border border-white/10 bg-white/[0.03] p-6 sm:p-10">
               <div className="flex items-start gap-4">
                 <div className="shrink-0 flex h-14 w-14 items-center justify-center rounded-2xl bg-teal text-white">
                   <AudioLines size={26} />
@@ -184,7 +184,7 @@ export default function AIProjects() {
                     key={s.label}
                     className="rounded-xl border border-white/10 bg-white/5 p-4 text-center"
                   >
-                    <div className="text-2xl sm:text-3xl font-extrabold text-teal-light">
+                    <div className="text-2xl sm:text-3xl font-extrabold text-teal-light font-mono">
                       {s.value}
                     </div>
                     <div className="mt-1 text-xs text-gray-400 font-medium">{s.label}</div>
