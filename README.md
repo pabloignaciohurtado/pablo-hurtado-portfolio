@@ -19,10 +19,12 @@ Genera el sitio estático en `dist/`.
 
 ## Deploy en Vercel
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/pabloignaciohurtado/pablo-hurtado-portfolio)
+
 Este proyecto es un sitio estático de Vite (no Next.js), 100% compatible con el preset
 "Vite" de Vercel sin configuración adicional:
 
-1. Importa el repositorio en [vercel.com/new](https://vercel.com/new).
+1. Click en el botón de arriba, o importa el repositorio manualmente en [vercel.com/new](https://vercel.com/new).
 2. Vercel detecta automáticamente el framework Vite (build command `npm run build`,
    output directory `dist`).
 3. Click en **Deploy**.
