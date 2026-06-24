@@ -42,9 +42,10 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed">
-            Pablo Hurtado — más de 10 años liderando equipos de Customer Experience,
-            Calidad e Inteligencia Artificial. Convierto datos de clientes en decisiones
-            de negocio y procesos en ventajas competitivas.
+            Soy Pablo Hurtado. Llevo más de 10 años liderando equipos de Experiencia de
+            Cliente y Calidad, y hoy dirijo la adopción de inteligencia artificial en WOM
+            Chile. Mi obsesión es la misma desde el primer día: convertir lo que el cliente
+            vive y dice en decisiones que cambian cómo opera el negocio.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">

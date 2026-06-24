@@ -12,7 +12,7 @@ const EXPERIENCE = [
     current: true,
     badges: ['Premio CX WOM', '+400K llamadas analizadas'],
     summary:
-      'Lidero la integración de IA en la gestión de calidad y experiencia de cliente, con proyectos de impacto transversal en toda la compañía.',
+      'Integro IA en la calidad y la experiencia de cliente para que las decisiones dejen de depender de la intuición. Lo que antes era una muestra de llamadas auditadas a mano, hoy es analítica a gran escala sobre las conversaciones.',
     details: [
       'Lidero el desarrollo de mejoras de procesos con Inteligencia Artificial, visibilidad 360° de clientes, monitoreo de desempeño y calidad de servicio, con diseños automatizados para operaciones ágiles.',
       'Transformación con IA: implementación de soluciones de speech y text analytics con modelos Gemini 2.0 y 2.5 para auditar conversaciones a gran escala (base de +400K llamadas), detectar oportunidades y prevenir riesgos.',
@@ -29,7 +29,7 @@ const EXPERIENCE = [
     icon: ShoppingBag,
     badges: ['Equipo +50 personas', 'Microsoft Dynamics CRM', 'NPS 92+'],
     summary:
-      'Lideré el Contact Center 360° y los canales digitales de Jumbo y las marcas del grupo, integrando inteligencia artificial en la operación de servicio.',
+      'Tomé el servicio al cliente de Jumbo y lo convertí en una operación omnicanal con IA: un Contact Center 360°, un chatbot que resuelve solo y un CRM que por fin ordenó los datos.',
     details: [
       'Lideré el Contact Center 360° y los canales digitales (redes sociales, chatbots y plataformas web), asegurando una experiencia omnicanal consistente y de alta calidad.',
       'Líder de la implementación de Microsoft Dynamics 365 CRM y de ChatGPT-4 Copilot para automatizar canales de atención, simplificando el árbol de tipificaciones de 300 a 200 motivos (-30%) e incrementando en 20% los registros útiles.',
@@ -46,7 +46,7 @@ const EXPERIENCE = [
     icon: Headphones,
     badges: ['Fundador del área', 'Omnicanal', 'Zendesk'],
     summary:
-      'Jefe del servicio y experiencia de cliente a nivel nacional para las marcas Oxford, Muvo, Cannondale y Kona, fundando el área desde la estrategia hasta la ejecución.',
+      'Llegué a una compañía sin área de servicio al cliente y la construí desde cero —criterios, KPIs, plataforma y cultura— a nivel nacional para las marcas Oxford, Muvo, Cannondale y Kona.',
     details: [
       'Lideré la experiencia de cliente de 13 tiendas propias de retail, la cadena de talleres de mantención y el ecommerce de las marcas Oxford, Muvo, Cannondale y Kona.',
       'Fundé el área de servicio definiendo criterios, KPIs, decálogos de servicio y protocolos de atención, con un marco de calidad medible desde el inicio.',
@@ -62,7 +62,7 @@ const EXPERIENCE = [
     industry: 'Belleza & Consumo Masivo',
     icon: Gem,
     summary:
-      'Trayectoria a través de roles comerciales, de post venta e inteligencia de cliente en la industria de belleza.',
+      'Mis primeros años en grande: ventas, post venta e inteligencia de cliente en una de las mayores compañías de belleza de la región. La base de todo lo que vino después.',
     details: [
       'Sales Controller (2018–2020): control y seguimiento de venta y resultados comerciales.',
       'Post-Sales Support Manager (2014–2016): mejora continua de los procesos de post venta con foco en fidelización y experiencia.',

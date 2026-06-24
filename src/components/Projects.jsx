@@ -98,7 +98,7 @@ export default function Projects() {
             Resultados reales, no solo títulos
           </h2>
           <p className="mt-4 text-lg text-ink-light max-w-2xl mx-auto">
-            Haz click en cada proyecto para ver el detalle de ejecución y resultados.
+            Cada uno empezó con un problema concreto. Haz click para ver qué hice y qué resultó.
           </p>
         </Reveal>
 

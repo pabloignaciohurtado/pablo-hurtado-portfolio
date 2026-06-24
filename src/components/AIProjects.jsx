@@ -65,7 +65,7 @@ export default function AIProjects() {
             Inteligencia artificial aplicada a resultados de negocio
           </h2>
           <p className="mt-4 text-lg text-gray-300 max-w-2xl mx-auto">
-            Dos casos de uso reales donde la IA generó impacto medible en la operación.
+            Dos casos reales donde llevé la IA del piloto a la operación, con impacto medible.
           </p>
         </Reveal>
 

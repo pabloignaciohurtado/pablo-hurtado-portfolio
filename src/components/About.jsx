@@ -21,25 +21,26 @@ export default function About() {
             </h2>
             <div className="mt-6 space-y-5 text-lg text-ink-light leading-relaxed">
               <p>
-                Soy <strong className="text-ink">Pablo Hurtado</strong>, con más de 10 años de
-                experiencia en liderazgo de equipos y estrategias de experiencia del cliente.
-                Actualmente lidero equipos como{' '}
-                <strong className="text-ink">Jefe de Calidad y Mejora Continua en WOM Chile</strong>,
-                combinando inteligencia artificial, automatización y el rediseño de procesos para
-                optimizar el servicio al cliente y garantizar una experiencia superior en cada
-                punto de contacto.
+                Empecé entendiendo al cliente desde la primera línea —ventas, post venta,
+                reclamos— y nunca dejé de hacerlo. Esa cercanía con lo que realmente le pasa a
+                las personas es la que hoy me permite rediseñar operaciones completas. Más de{' '}
+                <strong className="text-ink">10 años</strong> después, sigo creyendo que las
+                mejores decisiones de negocio nacen de escuchar bien.
               </p>
               <p>
-                He implementado soluciones innovadoras como la integración de herramientas de{' '}
-                <strong className="text-ink">IA y automatización</strong>, mejorando indicadores
-                críticos como el <strong className="text-ink">NPS y CSAT</strong>. Mi misión es
-                transformar la experiencia del cliente mediante estrategias disruptivas,
-                impulsando el crecimiento sostenible y la eficiencia operativa en la era digital.
+                Hoy, como <strong className="text-ink">Jefe de Calidad y Mejora Continua en WOM
+                Chile</strong>, integro <strong className="text-ink">inteligencia artificial</strong>,
+                automatización y procesos lean para que la calidad deje de depender de la
+                intuición y pase a basarse en datos. He llevado speech analytics a más de{' '}
+                <strong className="text-ink">400.000 llamadas</strong>, implementado CRM y
+                chatbots con IA, y movido indicadores como <strong className="text-ink">NPS,
+                CSAT, CES y FCR</strong> en operaciones de gran escala.
               </p>
               <p>
-                He construido mi carrera en industrias tan distintas como telecomunicaciones,
-                retail, consumo masivo y belleza, siempre con un mismo foco: entender al cliente
-                para rediseñar la operación a su alrededor.
+                Creo en los equipos con criterio por sobre los procesos rígidos, en los datos
+                que se convierten en acción, y en que la mejor tecnología es la que vuelve
+                invisible la fricción del cliente. Si algo no mejora la experiencia de una
+                persona real, no me interesa.
               </p>
             </div>
           </Reveal>
