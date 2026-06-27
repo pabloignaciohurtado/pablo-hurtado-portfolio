@@ -1,4 +1,5 @@
 import { siGooglegemini, siZendesk, siWhatsapp } from 'simple-icons'
+import { Headset } from 'lucide-react'
 import Reveal from './Reveal'
 
 const COMPANIES = [
@@ -28,6 +29,7 @@ function MicrosoftMark({ className }) {
 }
 
 const TECH = [
+  { name: 'Genesys', sub: 'Contact center · telefonía', render: (c) => <Headset className={c} strokeWidth={1.75} /> },
   { name: 'Google Gemini', sub: 'Speech Analytics', render: (c) => <BrandIcon icon={siGooglegemini} className={c} /> },
   { name: 'Dynamics 365', sub: 'CRM Microsoft', render: (c) => <MicrosoftMark className={c} /> },
   { name: 'Zendesk', sub: 'Help desk omnicanal', render: (c) => <BrandIcon icon={siZendesk} className={c} /> },
@@ -72,11 +74,11 @@ export default function LogosWall() {
           <p className="mt-14 text-center text-xs font-semibold uppercase tracking-[0.2em] text-ink-light/60">
             Tecnologías implementadas
           </p>
-          <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div className="mt-6 flex flex-wrap justify-center gap-4">
             {TECH.map((t) => (
               <div
                 key={t.name}
-                className="group flex flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-8 transition-all duration-300 hover:border-teal/30 hover:shadow-lg hover:shadow-teal/5 hover:-translate-y-1"
+                className="group flex w-[calc(50%-0.5rem)] sm:w-44 flex-col items-center justify-center rounded-2xl border border-gray-200 bg-white px-6 py-8 transition-all duration-300 hover:border-teal/30 hover:shadow-lg hover:shadow-teal/5 hover:-translate-y-1"
               >
                 {t.render('h-9 w-9 text-gray-400 transition-colors group-hover:text-teal')}
                 <span className="mt-4 text-sm font-semibold text-ink">{t.name}</span>
