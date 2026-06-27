@@ -32,7 +32,7 @@ export default function About() {
                 Chile</strong>, integro <strong className="text-ink">inteligencia artificial</strong>,
                 automatización y procesos lean para que la calidad deje de depender de la
                 intuición y pase a basarse en datos. He llevado speech analytics a más de{' '}
-                <strong className="text-ink">400.000 llamadas</strong>, implementado CRM y
+                <strong className="text-ink">3 millones de llamadas</strong>, implementado CRM y
                 chatbots con IA, y movido indicadores como <strong className="text-ink">NPS,
                 CSAT, CES y FCR</strong> en operaciones de gran escala.
               </p>

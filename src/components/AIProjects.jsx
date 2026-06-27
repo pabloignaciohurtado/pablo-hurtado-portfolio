@@ -37,7 +37,7 @@ const SPEECH_IMPACT = [
 ]
 
 const SPEECH_STATS = [
-  { value: '+400K', label: 'Llamadas procesadas' },
+  { value: '+3M', label: 'Llamadas procesadas' },
   { value: '+17 pts', label: 'Trazabilidad de contactos' },
   { value: '-5 pts', label: 'Eficiencia presupuestaria anual' },
   { value: '-25 pts', label: 'Tiempo de gestión por llamada' },
@@ -173,7 +173,7 @@ export default function AIProjects() {
 
               <p className="mt-6 text-gray-300 leading-relaxed">
                 Solución de IA generativa que escucha y analiza los audios de las llamadas del
-                call center sobre una base de más de 400K llamadas, generando resúmenes,
+                call center sobre una base de más de 3 millones de llamadas, generando resúmenes,
                 detectando intención y segmentando clientes para accionar mejoras operativas en
                 toda la compañía.
               </p>

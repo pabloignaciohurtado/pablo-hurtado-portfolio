@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import ImpactStats from './components/ImpactStats'
+import LogosWall from './components/LogosWall'
 import Experience from './components/Experience'
 import Projects from './components/Projects'
 import AIProjects from './components/AIProjects'
@@ -18,6 +19,7 @@ function App() {
         <Hero />
         <About />
         <ImpactStats />
+        <LogosWall />
         <Experience />
         <Projects />
         <AIProjects />

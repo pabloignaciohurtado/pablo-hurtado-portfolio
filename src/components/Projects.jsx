@@ -24,11 +24,11 @@ const PROJECTS = [
     company: 'WOM Chile',
     icon: AudioLines,
     description:
-      'IA generativa (Gemini) sobre una base de +400K llamadas del call center: resúmenes automáticos, detección de intención y segmentación de clientes.',
+      'IA generativa (Gemini) sobre una base de +3M llamadas del call center: resúmenes automáticos, detección de intención y segmentación de clientes.',
     tech: ['Gemini', 'Speech-to-Text', 'NLP'],
     results: ['+17 pts trazabilidad', '-25% tiempo de gestión'],
     details: [
-      'Procesamiento automático de audios sobre una base de más de 400K llamadas del call center.',
+      'Procesamiento automático de audios sobre una base de más de 3 millones de llamadas del call center.',
       'Resultados validados: +17 puntos en trazabilidad de contactos, -5 puntos de eficiencia presupuestaria y -25 puntos porcentuales en el tiempo de gestión de llamada.',
       'Generación automática de resúmenes y transcripciones, detección de intenciones y patrones, y segmentación de clientes.',
       'Reconocimiento como referente de Experiencia del Cliente en WOM; eficiencias reinvertidas en mejoras y reducción del estrés operacional del personal.',

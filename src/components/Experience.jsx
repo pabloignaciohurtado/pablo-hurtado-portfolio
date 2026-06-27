@@ -10,12 +10,12 @@ const EXPERIENCE = [
     industry: 'Telecomunicaciones',
     icon: Wifi,
     current: true,
-    badges: ['Premio CX WOM', '+400K llamadas analizadas'],
+    badges: ['Premio CX WOM', '+3M llamadas analizadas'],
     summary:
       'Integro IA en la calidad y la experiencia de cliente para que las decisiones dejen de depender de la intuición. Lo que antes era una muestra de llamadas auditadas a mano, hoy es analítica a gran escala sobre las conversaciones.',
     details: [
       'Lidero el desarrollo de mejoras de procesos con Inteligencia Artificial, visibilidad 360° de clientes, monitoreo de desempeño y calidad de servicio, con diseños automatizados para operaciones ágiles.',
-      'Transformación con IA: implementación de soluciones de speech y text analytics con modelos Gemini 2.0 y 2.5 para auditar conversaciones a gran escala (base de +400K llamadas), detectar oportunidades y prevenir riesgos.',
+      'Transformación con IA: implementación de soluciones de speech y text analytics con modelos Gemini 2.0 y 2.5 para auditar conversaciones a gran escala (base de +3 millones de llamadas), detectar oportunidades y prevenir riesgos.',
       'Resultados validados: +17 puntos en trazabilidad de contactos, -5 puntos de eficiencia presupuestaria y -25 puntos porcentuales en el tiempo de gestión de llamada.',
       'Dirección de soluciones tecnológicas de eficiencia con procesos lean basados en automatizaciones de Machine Learning y modelado de comportamiento de clientes por segmento.',
       'Liderazgo de equipos de calidad: coordinación y desarrollo de analistas, supervisores y Product Managers. Planes de acción basados en datos para elevar NPS, CSAT, CES, FCR y adherencia.',

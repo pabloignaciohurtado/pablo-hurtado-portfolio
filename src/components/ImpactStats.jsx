@@ -13,9 +13,9 @@ const METRICS = [
     featured: true,
   },
   {
-    prefix: '+',
-    to: 400,
-    suffix: 'K',
+    prefix: '',
+    to: 3,
+    suffix: 'M+',
     label: 'Llamadas analizadas con IA',
     context: 'Speech Analytics — WOM',
     icon: AudioLines,
