@@ -21,6 +21,8 @@ const WM = '#ff2d8e'
 // Dynamics 365
 const DB = '#2b88d8'
 const DB2 = '#5bb1ff'
+// Zendesk
+const ZG2 = '#2dd4bf'
 
 export function ChatbotMockup({ className = '' }) {
   return (
@@ -224,6 +226,69 @@ export function CRMMockup({ className = '' }) {
       />
       <text x="456" y="236" fill={TEXT} fontSize="18" fontFamily="monospace" fontWeight="700" textAnchor="middle">80%</text>
       <text x="456" y="300" fill={MUTED} fontSize="9" fontFamily="sans-serif" textAnchor="middle">registros consistentes</text>
+    </svg>
+  )
+}
+
+export function ZendeskMockup({ className = '' }) {
+  const tickets = [
+    { ch: 'Tienda', subj: 'Cambio de producto', c: '#22c55e', s: 'Resuelto' },
+    { ch: 'Web', subj: 'Estado de despacho', c: ZG2, s: 'Abierto' },
+    { ch: 'WhatsApp', subj: 'Consulta de garantía', c: ZG2, s: 'Abierto' },
+    { ch: 'Teléfono', subj: 'Reclamo facturación', c: '#f59e0b', s: 'Pendiente' },
+  ]
+  const channels = ['Tienda', 'Ecommerce', 'WhatsApp', 'Teléfono']
+  return (
+    <svg viewBox="0 0 560 380" className={className} role="img" aria-label="Mockup ilustrativo de mesa de ayuda omnicanal">
+      <rect x="2" y="2" width="556" height="376" rx="16" fill={PANEL} stroke={LINE} strokeWidth="2" />
+      <rect x="2" y="2" width="556" height="40" rx="16" fill={PANEL2} />
+      <rect x="2" y="26" width="556" height="16" fill={PANEL2} />
+      <circle cx="26" cy="22" r="5" fill="#ef4444" />
+      <circle cx="44" cy="22" r="5" fill="#f59e0b" />
+      <circle cx="62" cy="22" r="5" fill="#22c55e" />
+      <rect x="200" y="13" width="160" height="18" rx="9" fill={PANEL} />
+      <text x="280" y="26" fill={MUTED} fontSize="10" fontFamily="sans-serif" textAnchor="middle">Service · Zendesk</text>
+
+      {/* KPI */}
+      {[
+        { x: 24, big: 'CSAT 94%', small: 'Satisfacción' },
+        { x: 196, big: '−32%', small: 'Tiempo respuesta' },
+        { x: 368, big: '13', small: 'Tiendas + ecommerce' },
+      ].map((k) => (
+        <g key={k.small}>
+          <rect x={k.x} y="58" width="168" height="62" rx="12" fill={PANEL2} stroke={LINE} strokeWidth="1" />
+          <text x={k.x + 16} y="88" fill={ZG2} fontSize="20" fontFamily="monospace" fontWeight="700">{k.big}</text>
+          <text x={k.x + 16} y="106" fill={MUTED} fontSize="10" fontFamily="sans-serif">{k.small}</text>
+        </g>
+      ))}
+
+      {/* ticket list */}
+      <rect x="24" y="136" width="340" height="222" rx="12" fill={PANEL2} stroke={LINE} strokeWidth="1" />
+      <text x="40" y="160" fill={TEXT} fontSize="11" fontFamily="sans-serif" fontWeight="600">Tickets omnicanal</text>
+      {tickets.map((t, i) => (
+        <g key={t.subj}>
+          <rect x="40" y={176 + i * 42} width="308" height="34" rx="8" fill={PANEL} />
+          <circle cx="58" cy={193 + i * 42} r="5" fill={t.c} />
+          <text x="74" y={190 + i * 42} fill={TEXT} fontSize="10.5" fontFamily="sans-serif">{t.subj}</text>
+          <text x="74" y={202 + i * 42} fill={MUTED} fontSize="8" fontFamily="sans-serif">{t.ch}</text>
+          <rect x="266" y={183 + i * 42} width="70" height="20" rx="10" fill="rgba(45,212,191,0.14)" />
+          <text x="301" y={197 + i * 42} fill={ZG2} fontSize="9" fontFamily="sans-serif" textAnchor="middle">{t.s}</text>
+        </g>
+      ))}
+
+      {/* channels panel */}
+      <rect x="376" y="136" width="160" height="222" rx="12" fill={PANEL2} stroke={LINE} strokeWidth="1" />
+      <text x="392" y="160" fill={TEXT} fontSize="11" fontFamily="sans-serif" fontWeight="600">Canales unificados</text>
+      {channels.map((c, i) => (
+        <g key={c}>
+          <rect x="392" y={176 + i * 30} width="128" height="22" rx="11" fill={PANEL} stroke={LINE} strokeWidth="1" />
+          <circle cx="406" cy={187 + i * 30} r="4" fill={ZG2} />
+          <text x="418" y={191 + i * 30} fill={TEXT} fontSize="9.5" fontFamily="sans-serif">{c}</text>
+        </g>
+      ))}
+      <text x="392" y="316" fill={MUTED} fontSize="9" fontFamily="sans-serif">Experiencia consistente</text>
+      <rect x="392" y="324" width="128" height="6" rx="3" fill={LINE} />
+      <rect x="392" y="324" width="112" height="6" rx="3" fill={ZG2} />
     </svg>
   )
 }

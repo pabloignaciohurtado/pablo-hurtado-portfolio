@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, Bot, AudioLines, Database, ShieldCheck, Building2, ArrowRight } from 'lucide-react'
 import Reveal from './Reveal'
-import { CRMMockup } from './ProjectMockups'
+import { CRMMockup, ZendeskMockup } from './ProjectMockups'
 
 const PROJECTS = [
   {
@@ -41,6 +41,7 @@ const PROJECTS = [
     name: 'Fundación del Área de Servicio al Cliente — Oxford',
     company: 'Oxford',
     icon: Building2,
+    mockup: 'zendesk',
     description:
       'Creación desde cero del área de Servicio al Cliente: filosofía, KPIs y operación omnicanal sobre Zendesk para las marcas Oxford, Muvo, Cannondale y Kona.',
     tech: ['Zendesk', 'Omnicanalidad', 'Customer Service Ops', 'Decálogos de Servicio'],
@@ -175,9 +176,10 @@ export default function Projects() {
                   >
                     <div className="overflow-hidden">
                       <div className="px-6 pb-6 sm:px-20">
-                        {project.mockup === 'crm' && (
+                        {project.mockup && (
                           <div className="mb-6">
-                            <CRMMockup className="w-full rounded-xl drop-shadow-xl" />
+                            {project.mockup === 'crm' && <CRMMockup className="w-full rounded-xl drop-shadow-xl" />}
+                            {project.mockup === 'zendesk' && <ZendeskMockup className="w-full rounded-xl drop-shadow-xl" />}
                             <p className="mt-2 text-center text-xs text-gray-400">
                               Representación ilustrativa · no es una captura del sistema real
                             </p>

@@ -1,7 +1,10 @@
-import { Mail, MapPin } from 'lucide-react'
+import { Mail, MapPin, FileDown } from 'lucide-react'
 import Reveal from './Reveal'
+import { LinkedInIcon } from './icons'
 
 const EMAIL = 'pabloignaciohurtado@gmail.com'
+const LINKEDIN = 'https://www.linkedin.com/in/pablohurtadonunez/'
+const CV = '/CV-Pablo-Hurtado.pdf'
 
 export default function CTA() {
   return (
@@ -23,14 +26,33 @@ export default function CTA() {
             cliente y transformación de operaciones.
           </p>
 
-          <div className="mt-10 flex flex-col items-center gap-4">
-            <a
-              href={`mailto:${EMAIL}`}
-              className="inline-flex items-center gap-2.5 rounded-lg bg-teal px-8 py-4 font-semibold text-white text-lg shadow-lg shadow-teal/30 transition-all hover:bg-teal-light hover:shadow-teal-light/40 hover:-translate-y-0.5"
-            >
-              <Mail size={20} />
-              Contacta conmigo
-            </a>
+          <div className="mt-10 flex flex-col items-center gap-5">
+            <div className="flex flex-wrap items-center justify-center gap-3">
+              <a
+                href={`mailto:${EMAIL}`}
+                className="inline-flex items-center gap-2.5 rounded-lg bg-teal px-8 py-4 font-semibold text-white text-lg shadow-lg shadow-teal/30 transition-all hover:bg-teal-light hover:shadow-teal-light/40 hover:-translate-y-0.5"
+              >
+                <Mail size={20} />
+                Contacta conmigo
+              </a>
+              <a
+                href={LINKEDIN}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2.5 rounded-lg border border-white/20 px-6 py-4 font-semibold text-white transition-all hover:bg-white/10 hover:-translate-y-0.5"
+              >
+                <LinkedInIcon size={20} />
+                LinkedIn
+              </a>
+              <a
+                href={CV}
+                download
+                className="inline-flex items-center gap-2.5 rounded-lg border border-white/20 px-6 py-4 font-semibold text-white transition-all hover:bg-white/10 hover:-translate-y-0.5"
+              >
+                <FileDown size={20} />
+                Descargar CV
+              </a>
+            </div>
             <a
               href={`mailto:${EMAIL}`}
               className="text-gray-400 hover:text-teal-light transition-colors"

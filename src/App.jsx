@@ -11,6 +11,7 @@ import Expertise from './components/Expertise'
 import Education from './components/Education'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <CTA />
       </main>
       <Footer />
+      <Analytics />
     </>
   )
 }
