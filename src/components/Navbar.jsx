@@ -14,11 +14,32 @@ const LINKS = [
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
+  const [active, setActive] = useState('')
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
     window.addEventListener('scroll', onScroll)
     return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    const ids = LINKS.map((l) => l.href.slice(1))
+    const sections = ids
+      .map((id) => document.getElementById(id))
+      .filter(Boolean)
+    if (!sections.length) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((e) => e.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)
+        if (visible[0]) setActive('#' + visible[0].target.id)
+      },
+      { rootMargin: '-45% 0px -50% 0px', threshold: [0, 0.25, 0.5, 1] }
+    )
+    sections.forEach((s) => observer.observe(s))
+    return () => observer.disconnect()
   }, [])
 
   const handleClick = (href) => {
@@ -49,11 +70,16 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
+                aria-current={active === link.href ? 'true' : undefined}
                 onClick={(e) => {
                   e.preventDefault()
                   handleClick(link.href)
                 }}
-                className="text-sm font-medium text-gray-300 hover:text-teal-light transition-colors"
+                className={`text-sm font-medium transition-colors ${
+                  active === link.href
+                    ? 'text-teal-light'
+                    : 'text-gray-300 hover:text-teal-light'
+                }`}
               >
                 {link.label}
               </a>
@@ -80,11 +106,14 @@ export default function Navbar() {
             <li key={link.href}>
               <a
                 href={link.href}
+                aria-current={active === link.href ? 'true' : undefined}
                 onClick={(e) => {
                   e.preventDefault()
                   handleClick(link.href)
                 }}
-                className="block text-gray-200 hover:text-teal-light font-medium"
+                className={`block font-medium ${
+                  active === link.href ? 'text-teal-light' : 'text-gray-200 hover:text-teal-light'
+                }`}
               >
                 {link.label}
               </a>

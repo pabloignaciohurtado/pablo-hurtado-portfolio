@@ -1,5 +1,8 @@
+import { useEffect, useState } from 'react'
 import { ArrowDown, Sparkles } from 'lucide-react'
 import NeuralBackground from './NeuralBackground'
+
+const HIGHLIGHT = 'inteligencia del cliente'
 
 const HERO_STATS = [
   { value: 'NPS 92+', label: 'Chatbot IA Jumbo', href: '#ia-chatbot-jumbo' },
@@ -10,6 +13,35 @@ const HERO_STATS = [
 
 export default function Hero() {
   const scrollTo = (href) => document.querySelector(href)?.scrollIntoView({ behavior: 'smooth' })
+
+  const [typed, setTyped] = useState('')
+  const [typingDone, setTypingDone] = useState(false)
+
+  useEffect(() => {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (reduce) {
+      setTyped(HIGHLIGHT)
+      setTypingDone(true)
+      return
+    }
+    let i = 0
+    let timer
+    let doneTimer
+    const start = setTimeout(function tick() {
+      i++
+      setTyped(HIGHLIGHT.slice(0, i))
+      if (i < HIGHLIGHT.length) {
+        timer = setTimeout(tick, 55)
+      } else {
+        doneTimer = setTimeout(() => setTypingDone(true), 1200)
+      }
+    }, 350)
+    return () => {
+      clearTimeout(start)
+      clearTimeout(timer)
+      clearTimeout(doneTimer)
+    }
+  }, [])
 
   return (
     <section
@@ -40,7 +72,8 @@ export default function Hero() {
 
           <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight max-w-4xl">
             Transformo operaciones desde la{' '}
-            <span className="text-gradient">inteligencia del cliente</span>
+            <span className="text-gradient">{typed}</span>
+            {!typingDone && <span className="typing-caret" aria-hidden="true" />}
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg sm:text-xl text-gray-300 leading-relaxed">
