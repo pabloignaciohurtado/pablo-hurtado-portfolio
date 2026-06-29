@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Differentiators from './components/Differentiators'
 import ImpactStats from './components/ImpactStats'
 import LogosWall from './components/LogosWall'
 import Experience from './components/Experience'
@@ -18,6 +19,7 @@ function App() {
       <main>
         <Hero />
         <About />
+        <Differentiators />
         <ImpactStats />
         <LogosWall />
         <Experience />
