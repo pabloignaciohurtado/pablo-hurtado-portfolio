@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { ChevronDown, Bot, AudioLines, Database, ShieldCheck, Building2, ArrowRight } from 'lucide-react'
 import Reveal from './Reveal'
+import { CRMMockup } from './ProjectMockups'
 
 const PROJECTS = [
   {
@@ -56,6 +57,7 @@ const PROJECTS = [
     name: 'CRM Microsoft Dynamics 365',
     company: 'Cencosud',
     icon: Database,
+    mockup: 'crm',
     description:
       'Transformación de procesos internos: datos centralizados, trazabilidad y gobierno de la información, con Microsoft Dynamics 365 y ChatGPT-4 Copilot.',
     tech: ['Microsoft Dynamics 365', 'ChatGPT-4 Copilot', 'Gestión del Cambio', 'Gobierno de Datos'],
@@ -173,6 +175,14 @@ export default function Projects() {
                   >
                     <div className="overflow-hidden">
                       <div className="px-6 pb-6 sm:px-20">
+                        {project.mockup === 'crm' && (
+                          <div className="mb-6">
+                            <CRMMockup className="w-full rounded-xl drop-shadow-xl" />
+                            <p className="mt-2 text-center text-xs text-gray-400">
+                              Representación ilustrativa · no es una captura del sistema real
+                            </p>
+                          </div>
+                        )}
                         <ul className="space-y-2.5">
                           {project.details.map((d) => (
                             <li key={d} className="flex gap-3 text-ink-light leading-relaxed">

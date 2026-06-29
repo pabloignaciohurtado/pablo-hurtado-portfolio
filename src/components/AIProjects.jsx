@@ -1,5 +1,6 @@
 import { Bot, AudioLines, ShieldAlert, BrainCircuit, Award } from 'lucide-react'
 import Reveal from './Reveal'
+import { ChatbotMockup, SpeechMockup } from './ProjectMockups'
 
 const CHATBOT_STATS = [
   { value: '95%', label: 'Disponibilidad del canal' },
@@ -93,6 +94,13 @@ export default function AIProjects() {
                 base de conocimiento, integrado en la plataforma de WhatsApp y redes sociales.
               </p>
 
+              <div className="mt-8 flex justify-center">
+                <ChatbotMockup className="w-full max-w-[260px] drop-shadow-2xl" />
+              </div>
+              <p className="mt-2 text-center text-xs text-gray-500">
+                Representación ilustrativa · no es una captura del sistema real
+              </p>
+
               <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
                 {CHATBOT_STATS.map((s) => (
                   <div
@@ -176,6 +184,13 @@ export default function AIProjects() {
                 call center sobre una base de más de 3 millones de llamadas, generando resúmenes,
                 detectando intención y segmentando clientes para accionar mejoras operativas en
                 toda la compañía.
+              </p>
+
+              <div className="mt-8">
+                <SpeechMockup className="w-full drop-shadow-2xl" />
+              </div>
+              <p className="mt-2 text-center text-xs text-gray-500">
+                Representación ilustrativa · no es una captura del sistema real
               </p>
 
               <div className="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-4">
